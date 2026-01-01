@@ -1,58 +1,101 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <title>لیست محتوا</title>
+    <style>
+        body {
+            font-family: Tahoma, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+            direction: rtl;
+        }
 
-html
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>مقالات<style>
-body {
-font-family: Arial, sans-serif;
-margin: 0;
-padding: 20px;
-background-color: #f4f4f4;
-}
-.article-card {
-background: #fff;
-border: 1px solid #ccc;
-border-radius: 8px;
-padding: 16px;
-margin-bottom: 20px;
-display: flex;
-flex-direction: column;
-align-items: center;
-}
-.article-card img {
-max-width: 100%;
-border-radius: 8px;
-}
-.article-title {
-font-size: 24px;
-margin: 16px 0 8px;
-}
-.article-summary {
-font-size: 16px;
-margin: 0 0 16px;
-text-align: center;
-}
-.read-more {
-background-color: #007bff;
-color: white;
-padding: 10px 20px;
-border: none;
-border-radius: 5px;
-cursor: pointer;
-}
-.read-more:hover {
-background-color: #0056b3;
-}
-.container {
-display: grid;
-grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-gap: 20px;
-}
-</style>
-مقالات اخیر
-<div class="article-card">
-عنوان مقاله ۱خلاصه‌ای از مقاله ۱ که توضیحی مختصر درباره محتوا و موضوع آن ارائه می‌دهد.مشاهده کامل
-عنوان مقاله ۲
-خلاصه‌ای از مقاله ۲ که توضیحی مختصر درباره محتوا و موضوع آن ارائه می‌دهد.<button class="read-more">مشاهده کامل
-عنوان مقاله ۳
-خلاصه‌ای از مقاله ۳ که توضیحی مختصر درباره محتوا و موضوع آن ارائه می‌دهد.<button class="read-more">مشاهده کامل
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background-color: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 15px;
+            flex: 1;
+        }
+
+        .card-content h3 {
+            margin: 0 0 10px;
+            font-size: 18px;
+        }
+
+        .card-content p {
+            font-size: 14px;
+            color: #555;
+            line-height: 1.8;
+        }
+
+        .card a {
+            display: block;
+            text-align: center;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            padding: 12px;
+            transition: background-color 0.3s;
+        }
+
+        .card a:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="card">
+        <img src="https://via.placeholder.com/400x300" alt="عکس">
+        <div class="card-content">
+            <h3>عنوان اول</h3>
+            <p>این یک خلاصه کوتاه از محتوای مورد نظر است که توضیح مختصری می‌دهد.</p>
+        </div>
+        <a href="https://00">تماشای کامل</a>
+    </div>
+
+    <div class="card">
+        <img src="https://via.placeholder.com/400x300" alt="عکس">
+        <div class="card-content">
+            <h3>عنوان دوم</h3>
+            <p>در این بخش می‌توانید توضیح کوتاهی درباره این آیتم قرار دهید.</p>
+        </div>
+        <a href="https://00">تماشای کامل</a>
+    </div>
+
+    <div class="card">
+        <img src="https://via.placeholder.com/400x300" alt="عکس">
+        <div class="card-content">
+            <h3>عنوان سوم</h3>
+            <p>خلاصه‌ای کوتاه برای جذب کاربر و هدایت به صفحه کامل.</p>
+        </div>
+        <a href="https://00">تماشای کامل</a>
+    </div>
+
+</div>
+
+</body>
+</html>
